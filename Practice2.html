@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    #myHeader {
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        z-index: 1;
+        margin-top: -9px;
+    }
+
+    svg {
+        fill: red;
+        vertical-align: bottom;
+    }
+
+    .ad {
+        display: inline-block;
+        margin-top: 16px;
+        border: 1px solid gray;
+        width: 250px;
+        height: 250px;
+        padding: 9px;
+        text-align: center;
+        position: relative;
+        margin-right: 10px;
+    }
+
+    .ad img {
+        width: 100px;
+        height: 150px;
+    }
+
+    span {
+        background: yellow;
+
+    }
+
+    input {
+        width: 30%;
+        height: 40px;
+        border: 2px solid black;
+    }
+
+    select {
+        width: 15%;
+        height: 45px;
+        border: 2px solid black;
+    }
+
+    .featured {
+        position: absolute;
+        padding: 5px;
+        font-family: ariaL;
+        font-size: 10px;
+        font-weight: 700;
+        left: 32px;
+    }
+
+    div svg {
+        position: relative;
+        top: -125px;
+        right: -60px;
+    }
+
+    .Rupees {
+        text-align: left;
+        font-weight: 700;
+        font-size: 29px;
+        background-color: white;
+    }
+
+    .discripton {
+        float: left;
+        background-color: white;
+        font-family: ariaL;
+        color: gray;
+        font-size: 17px;
+        overflow: hidden;
+        height: 50px;
+    }
+
+    #adSection {
+        top: 38px;
+        position: relative;
+    }
+
+    .moreDetail {
+        float: left;
+        background-color: white;
+        font-family: ariaL;
+        color: gray;
+        font-size: 10px;
+    }
+
+    .postedDay {
+        float: right;
+        background-color: white;
+        font-family: ariaL;
+        color: gray;
+        font-size: 10px;
+    }
+
+    /* p {
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        top: 360px;
+        color: #f50831;
+        font-size: 23px;
+    } */
+</style>
+
+<body>
+
+    <header class="header" id="myHeader">
+        <svg width="48px" height="48px" viewBox="0 0 1024 1024" data-aut-id="icon">
+            <path class="rui-77aaa"
+                d="M672.073 786.477h-139.037v-585.943h139.037v585.943zM483.019 493.596c0 133.44-108.16 241.419-241.419 241.419s-241.6-108.16-241.6-241.419c0-133.259 108.16-241.419 241.419-241.419s241.6 107.98 241.6 241.419zM314.73 493.596c0-40.447-32.683-73.13-73.13-73.13s-73.13 32.683-73.13 73.13c0 40.447 32.683 73.13 73.13 73.13s73.13-32.683 73.13-73.13zM1023.639 346.794h-92.27l-54.17 54.17-54.17-54.17h-92.27v93.895l53.448 53.448-53.448 53.448v92.631h93.715l52.906-52.906 52.906 52.906h93.715v-92.631l-53.448-53.448 53.448-53.448v-93.895h-0.361z">
+            </path>
+        </svg>
+        <!-- <svg width="25px" height="25px" viewBox="0 0 1024 1024" data-aut-id="icon">
+            <path class="rui-77aaa" d="M499.2 580.267c-82.475 0-149.333-66.859-149.333-149.333v0c0-82.475 66.859-149.333 149.333-149.333v0c82.475 0 149.333 66.859 149.333 149.333v0c0.041 1.291 0.065 2.808 0.065 4.331 0 80.118-64.949 145.067-145.067 145.067-1.523 0-3.041-0.023-4.552-0.070l0.221 0.005zM499.2 324.267c-57.98 2.259-104.408 48.687-106.66 106.457l-0.006 0.21c0 58.91 47.756 106.667 106.667 106.667v0c58.91 0 106.667-47.756 106.667-106.667v0c0-58.91-47.756-106.667-106.667-106.667v0zM473.6 934.4c-34.133-29.867-328.533-311.467-328.533-499.2 2.377-194.619 159.514-351.756 353.907-354.131l0.226-0.002c0.007 0 0.016 0 0.025 0 196.439 0 355.966 158.038 358.372 353.906l0.002 0.227c0 187.733-294.4 469.333-328.533 499.2zM499.2 162.133c-150.811 0-273.067 122.256-273.067 273.067v0c0 115.2 179.2 315.733 273.067 409.6 98.133-93.867 273.067-294.4 273.067-409.6 0-150.811-122.256-273.067-273.067-273.067v0z"></path>
+        </svg> -->
+        <select name="" id="">
+            <option value="Countries">Pakistan</option>
+            <option value="Countries">US</option>
+            <option value="Countries">China</option>
+            <option value="Countries">India</option>
+            <option value="Countries">Saudi Arabia</option>
+        </select>
+
+        <input type="text">
+    </header>
+
+    <section id="adSection">
+
+        <div class="ad">
+
+            <span class="featured">
+                Featured</span>
+
+
+            <img src="https://apollo-singapore.akamaized.net:443/v1/files/ixjeibptbwlr2-PK/image;s=272x0"
+                alt="Galaxy j7 2017">
+            <svg width="24px" height="24px" viewBox="0 0 1024 1024" data-aut-id="icon">
+                <path class="rui-77aaa"
+                    d="M713.387 128c-104.533 0-164.267 37.12-204.373 118.187-38.115-70.843-111.733-118.187-196.408-118.187-0.1 0-0.201 0-0.301 0l0.016-0c-215.893 0-288.853 289.707-170.667 407.467 48.64 48.213 189.867 197.973 370.347 389.547 196.693-207.787 341.333-357.547 372.053-389.547 116.907-116.053 40.107-407.467-170.667-407.467zM837.12 487.253c-31.147 31.573-136.96 142.080-317.867 333.227l-6.4 6.827-5.973-6.827q-248.32-263.68-318.293-333.227c-85.333-85.333-15.36-291.84 123.733-291.84 81.067 0 148.48 53.333 185.173 151.893l11.947 27.307 11.947-27.307c32.427-107.947 90.027-151.893 192-151.893 135.253-0 209.067 207.36 123.733 291.84z">
+                </path>
+            </svg>
+            <!-- <img src="https://apollo-singapore.akamaized.net:443/v1/files/zg0ol7n40p3i2-PK/image;s=272x0"  class="_3Kg_w"> -->
+            <!-- <img src="https://apollo-singapore.akamaized.net:443/v1/files/zg0ol7n40p3i2-PK/image;s=272x0" class="_3Kg_w"> -->
+            <div class="Rupees">
+                Rs 23,550
+            </div>
+            <div class="discripton">
+                Galaxy Note 9 Dual Sim
+            </div>
+            <div class="moreDetail">
+                WARIS KHAN, RAWALPINDI
+            </div>
+            <div class="postedDay">
+                TODAY
+            </div>
+        </div>
+        <div class="ad">
+            <span class="featured">
+                Featured</span>
+
+            <img src="https://apollo-singapore.akamaized.net:443/v1/files/q6i2gl5fign31-PK/image;s=272x0"
+                alt="Samsung galaxy Note8 duos Fd model Pta approved unused new stock">
+            <svg width="24px" height="24px" viewBox="0 0 1024 1024" data-aut-id="icon">
+                <path class="rui-77aaa"
+                    d="M713.387 128c-104.533 0-164.267 37.12-204.373 118.187-38.115-70.843-111.733-118.187-196.408-118.187-0.1 0-0.201 0-0.301 0l0.016-0c-215.893 0-288.853 289.707-170.667 407.467 48.64 48.213 189.867 197.973 370.347 389.547 196.693-207.787 341.333-357.547 372.053-389.547 116.907-116.053 40.107-407.467-170.667-407.467zM837.12 487.253c-31.147 31.573-136.96 142.080-317.867 333.227l-6.4 6.827-5.973-6.827q-248.32-263.68-318.293-333.227c-85.333-85.333-15.36-291.84 123.733-291.84 81.067 0 148.48 53.333 185.173 151.893l11.947 27.307 11.947-27.307c32.427-107.947 90.027-151.893 192-151.893 135.253-0 209.067 207.36 123.733 291.84z">
+                </path>
+            </svg>
+            <!-- <img src="https://apollo-singapore.akamaized.net:443/v1/files/zg0ol7n40p3i2-PK/image;s=272x0"  class="_3Kg_w"> -->
+            <!-- <img src="https://apollo-singapore.akamaized.net:443/v1/files/zg0ol7n40p3i2-PK/image;s=272x0" class="_3Kg_w"> -->
+            <div class="Rupees">
+                Rs 1,600
+            </div>
+            <div class="discripton">
+                Tecno Camon 12 Air
+            </div>
+            <div class="moreDetail">
+                Abid Market, Lahore, Punjab
+            </div>
+            <div class="postedDay">
+                Sep 25
+            </div>
+        </div>
+        <div class="ad">
+            <span class="featured">
+                Featured</span>
+            <img src="https://apollo-singapore.akamaized.net:443/v1/files/mi6arfi4lfix-PK/image;s=272x0"
+                alt="DIFFERENT PRICES USED BRANDED LAPTOPS AVAILABLE">
+            <svg width="24px" height="24px" viewBox="0 0 1024 1024" data-aut-id="icon">
+                <path class="rui-77aaa"
+                    d="M713.387 128c-104.533 0-164.267 37.12-204.373 118.187-38.115-70.843-111.733-118.187-196.408-118.187-0.1 0-0.201 0-0.301 0l0.016-0c-215.893 0-288.853 289.707-170.667 407.467 48.64 48.213 189.867 197.973 370.347 389.547 196.693-207.787 341.333-357.547 372.053-389.547 116.907-116.053 40.107-407.467-170.667-407.467zM837.12 487.253c-31.147 31.573-136.96 142.080-317.867 333.227l-6.4 6.827-5.973-6.827q-248.32-263.68-318.293-333.227c-85.333-85.333-15.36-291.84 123.733-291.84 81.067 0 148.48 53.333 185.173 151.893l11.947 27.307 11.947-27.307c32.427-107.947 90.027-151.893 192-151.893 135.253-0 209.067 207.36 123.733 291.84z">
+                </path>
+            </svg>
+            <div class="Rupees">
+                Rs 16,550
+            </div>
+            <div class="discripton">
+                DIFFERENT PRICES USED BRANDED LAPTOPS AVAILABLE
+            </div>
+            <div class="moreDetail">
+                M.A. Jinnah Road, Karachi, Sindh
+            </div>
+            <div class="postedDay">
+                6 days ago
+            </div>
+        </div>
+        <div class="ad">
+            <span class="featured">
+                Featured</span>
+            <img src="https://apollo-singapore.akamaized.net:443/v1/files/wocxo6qb0ioo2-PK/image;s=272x0"
+                alt="Honda Dream">
+            <svg width="24px" height="24px" viewBox="0 0 1024 1024" data-aut-id="icon">
+                <path class="rui-77aaa"
+                    d="M713.387 128c-104.533 0-164.267 37.12-204.373 118.187-38.115-70.843-111.733-118.187-196.408-118.187-0.1 0-0.201 0-0.301 0l0.016-0c-215.893 0-288.853 289.707-170.667 407.467 48.64 48.213 189.867 197.973 370.347 389.547 196.693-207.787 341.333-357.547 372.053-389.547 116.907-116.053 40.107-407.467-170.667-407.467zM837.12 487.253c-31.147 31.573-136.96 142.080-317.867 333.227l-6.4 6.827-5.973-6.827q-248.32-263.68-318.293-333.227c-85.333-85.333-15.36-291.84 123.733-291.84 81.067 0 148.48 53.333 185.173 151.893l11.947 27.307 11.947-27.307c32.427-107.947 90.027-151.893 192-151.893 135.253-0 209.067 207.36 123.733 291.84z">
+                </path>
+            </svg>
+            <div class="Rupees">
+                Rs 90,000
+            </div>
+            <div class="discripton">
+                Honda Dream
+            </div>
+            <div class="moreDetail">
+                Mansehra, Khyber Pakhtunkhwa, Pakistan
+
+            </div>
+            <div class="postedDay">
+                6 days ago
+            </div>
+        </div>
+        <div class="ad">
+            <span class="featured">
+                Featured</span>
+            <img src="https://apollo-singapore.akamaized.net:443/v1/files/mi6arfi4lfix-PK/image;s=272x0"
+                alt="DIFFERENT PRICES USED BRANDED LAPTOPS AVAILABLE">
+            <svg width="24px" height="24px" viewBox="0 0 1024 1024" data-aut-id="icon">
+                <path class="rui-77aaa"
+                    d="M713.387 128c-104.533 0-164.267 37.12-204.373 118.187-38.115-70.843-111.733-118.187-196.408-118.187-0.1 0-0.201 0-0.301 0l0.016-0c-215.893 0-288.853 289.707-170.667 407.467 48.64 48.213 189.867 197.973 370.347 389.547 196.693-207.787 341.333-357.547 372.053-389.547 116.907-116.053 40.107-407.467-170.667-407.467zM837.12 487.253c-31.147 31.573-136.96 142.080-317.867 333.227l-6.4 6.827-5.973-6.827q-248.32-263.68-318.293-333.227c-85.333-85.333-15.36-291.84 123.733-291.84 81.067 0 148.48 53.333 185.173 151.893l11.947 27.307 11.947-27.307c32.427-107.947 90.027-151.893 192-151.893 135.253-0 209.067 207.36 123.733 291.84z">
+                </path>
+            </svg>
+            <div class="Rupees">
+                Rs 16,550
+            </div>
+            <div class="discripton">
+                DIFFERENT PRICES USED BRANDED LAPTOPS AVAILABLE
+            </div>
+            <div class="moreDetail">
+                M.A. Jinnah Road, Karachi, Sindh
+            </div>
+            <div class="postedDay">
+                6 days ago
+            </div>
+        </div>
+        <div class="ad">
+            <span class="featured">
+                Featured</span>
+            <img src="https://apollo-singapore.akamaized.net:443/v1/files/mi6arfi4lfix-PK/image;s=272x0"
+                alt="DIFFERENT PRICES USED BRANDED LAPTOPS AVAILABLE">
+            <svg width="24px" height="24px" viewBox="0 0 1024 1024" data-aut-id="icon">
+                <path class="rui-77aaa"
+                    d="M713.387 128c-104.533 0-164.267 37.12-204.373 118.187-38.115-70.843-111.733-118.187-196.408-118.187-0.1 0-0.201 0-0.301 0l0.016-0c-215.893 0-288.853 289.707-170.667 407.467 48.64 48.213 189.867 197.973 370.347 389.547 196.693-207.787 341.333-357.547 372.053-389.547 116.907-116.053 40.107-407.467-170.667-407.467zM837.12 487.253c-31.147 31.573-136.96 142.080-317.867 333.227l-6.4 6.827-5.973-6.827q-248.32-263.68-318.293-333.227c-85.333-85.333-15.36-291.84 123.733-291.84 81.067 0 148.48 53.333 185.173 151.893l11.947 27.307 11.947-27.307c32.427-107.947 90.027-151.893 192-151.893 135.253-0 209.067 207.36 123.733 291.84z">
+                </path>
+            </svg>
+            <div class="Rupees">
+                Rs 16,550
+            </div>
+            <div class="discripton">
+                DIFFERENT PRICES USED BRANDED LAPTOPS AVAILABLE
+            </div>
+            <div class="moreDetail">
+                M.A. Jinnah Road, Karachi, Sindh
+            </div>
+            <div class="postedDay">
+                6 days ago
+            </div>
+        </div>
+        <div class="ad">
+            <span class="featured">
+                Featured</span>
+
+            <img src="https://apollo-singapore.akamaized.net:443/v1/files/q6i2gl5fign31-PK/image;s=272x0"
+                alt="Samsung galaxy Note8 duos Fd model Pta approved unused new stock">
+            <svg width="24px" height="24px" viewBox="0 0 1024 1024" data-aut-id="icon">
+                <path class="rui-77aaa"
+                    d="M713.387 128c-104.533 0-164.267 37.12-204.373 118.187-38.115-70.843-111.733-118.187-196.408-118.187-0.1 0-0.201 0-0.301 0l0.016-0c-215.893 0-288.853 289.707-170.667 407.467 48.64 48.213 189.867 197.973 370.347 389.547 196.693-207.787 341.333-357.547 372.053-389.547 116.907-116.053 40.107-407.467-170.667-407.467zM837.12 487.253c-31.147 31.573-136.96 142.080-317.867 333.227l-6.4 6.827-5.973-6.827q-248.32-263.68-318.293-333.227c-85.333-85.333-15.36-291.84 123.733-291.84 81.067 0 148.48 53.333 185.173 151.893l11.947 27.307 11.947-27.307c32.427-107.947 90.027-151.893 192-151.893 135.253-0 209.067 207.36 123.733 291.84z">
+                </path>
+            </svg>
+            <!-- <img src="https://apollo-singapore.akamaized.net:443/v1/files/zg0ol7n40p3i2-PK/image;s=272x0"  class="_3Kg_w"> -->
+            <!-- <img src="https://apollo-singapore.akamaized.net:443/v1/files/zg0ol7n40p3i2-PK/image;s=272x0" class="_3Kg_w"> -->
+            <div class="Rupees">
+                Rs 1,600
+            </div>
+            <div class="discripton">
+                Tecno Camon 12 Air
+            </div>
+            <div class="moreDetail">
+                Abid Market, Lahore, Punjab
+            </div>
+            <div class="postedDay">
+                Sep 25
+            </div>
+        </div>
+        <div class="ad">
+            <span class="featured">
+                Featured</span>
+
+            <img src="https://apollo-singapore.akamaized.net:443/v1/files/q6i2gl5fign31-PK/image;s=272x0"
+                alt="Samsung galaxy Note8 duos Fd model Pta approved unused new stock">
+            <svg width="24px" height="24px" viewBox="0 0 1024 1024" data-aut-id="icon">
+                <path class="rui-77aaa"
+                    d="M713.387 128c-104.533 0-164.267 37.12-204.373 118.187-38.115-70.843-111.733-118.187-196.408-118.187-0.1 0-0.201 0-0.301 0l0.016-0c-215.893 0-288.853 289.707-170.667 407.467 48.64 48.213 189.867 197.973 370.347 389.547 196.693-207.787 341.333-357.547 372.053-389.547 116.907-116.053 40.107-407.467-170.667-407.467zM837.12 487.253c-31.147 31.573-136.96 142.080-317.867 333.227l-6.4 6.827-5.973-6.827q-248.32-263.68-318.293-333.227c-85.333-85.333-15.36-291.84 123.733-291.84 81.067 0 148.48 53.333 185.173 151.893l11.947 27.307 11.947-27.307c32.427-107.947 90.027-151.893 192-151.893 135.253-0 209.067 207.36 123.733 291.84z">
+                </path>
+            </svg>
+            <!-- <img src="https://apollo-singapore.akamaized.net:443/v1/files/zg0ol7n40p3i2-PK/image;s=272x0"  class="_3Kg_w"> -->
+            <!-- <img src="https://apollo-singapore.akamaized.net:443/v1/files/zg0ol7n40p3i2-PK/image;s=272x0" class="_3Kg_w"> -->
+            <div class="Rupees">
+                Rs 1,600
+            </div>
+            <div class="discripton">
+                Tecno Camon 12 Air
+            </div>
+            <div class="moreDetail">
+                Abid Market, Lahore, Punjab
+            </div>
+            <div class="postedDay">
+                Sep 25
+            </div>
+        </div>
+        <div class="ad">
+            <span class="featured">
+                Featured</span>
+
+            <img src="https://apollo-singapore.akamaized.net:443/v1/files/q6i2gl5fign31-PK/image;s=272x0"
+                alt="Samsung galaxy Note8 duos Fd model Pta approved unused new stock">
+            <svg width="24px" height="24px" viewBox="0 0 1024 1024" data-aut-id="icon">
+                <path class="rui-77aaa"
+                    d="M713.387 128c-104.533 0-164.267 37.12-204.373 118.187-38.115-70.843-111.733-118.187-196.408-118.187-0.1 0-0.201 0-0.301 0l0.016-0c-215.893 0-288.853 289.707-170.667 407.467 48.64 48.213 189.867 197.973 370.347 389.547 196.693-207.787 341.333-357.547 372.053-389.547 116.907-116.053 40.107-407.467-170.667-407.467zM837.12 487.253c-31.147 31.573-136.96 142.080-317.867 333.227l-6.4 6.827-5.973-6.827q-248.32-263.68-318.293-333.227c-85.333-85.333-15.36-291.84 123.733-291.84 81.067 0 148.48 53.333 185.173 151.893l11.947 27.307 11.947-27.307c32.427-107.947 90.027-151.893 192-151.893 135.253-0 209.067 207.36 123.733 291.84z">
+                </path>
+            </svg>
+            <div class="Rupees">
+                Rs 1,600
+            </div>
+            <div class="discripton">
+                Tecno Camon 12 Air
+            </div>
+            <div class="moreDetail">
+                Abid Market, Lahore, Punjab
+            </div>
+            <div class="postedDay">
+                Sep 25
+            </div>
+        </div>
+        <div class="ad">
+            <span class="featured">
+                Featured</span>
+
+            <img src="https://apollo-singapore.akamaized.net:443/v1/files/q6i2gl5fign31-PK/image;s=272x0"
+                alt="Samsung galaxy Note8 duos Fd model Pta approved unused new stock">
+            <svg width="24px" height="24px" viewBox="0 0 1024 1024" data-aut-id="icon">
+                <path class="rui-77aaa"
+                    d="M713.387 128c-104.533 0-164.267 37.12-204.373 118.187-38.115-70.843-111.733-118.187-196.408-118.187-0.1 0-0.201 0-0.301 0l0.016-0c-215.893 0-288.853 289.707-170.667 407.467 48.64 48.213 189.867 197.973 370.347 389.547 196.693-207.787 341.333-357.547 372.053-389.547 116.907-116.053 40.107-407.467-170.667-407.467zM837.12 487.253c-31.147 31.573-136.96 142.080-317.867 333.227l-6.4 6.827-5.973-6.827q-248.32-263.68-318.293-333.227c-85.333-85.333-15.36-291.84 123.733-291.84 81.067 0 148.48 53.333 185.173 151.893l11.947 27.307 11.947-27.307c32.427-107.947 90.027-151.893 192-151.893 135.253-0 209.067 207.36 123.733 291.84z">
+                </path>
+            </svg>
+            <div class="Rupees">
+                Rs 1,600
+            </div>
+            <div class="discripton">
+                Tecno Camon 12 Air
+            </div>
+            <div class="moreDetail">
+                Abid Market, Lahore, Punjab
+            </div>
+            <div class="postedDay">
+                Sep 25
+            </div>
+        </div>
+    </section>
+    </section>
+</body>
+
+</html>

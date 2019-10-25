@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    #myHeader {
+        /* position: fixed; */
+        width: 100%;
+        background-color: white;
+        z-index: 14;
+        margin-top: -9px;
+
+    }
+
+    #adSection {
+        position: relative;
+        top: 38px;
+    }
+
+    .box {
+        position: relative;
+        margin: 15px;
+        width: 300px;
+        float: left;
+        height: 300px;
+        border: 1px solid gray;
+        text-align: center;
+    }
+
+    svg {
+        fill: red;
+        vertical-align: bottom;
+    }
+
+    input {
+        width: 30%;
+        height: 40px;
+        border: 2px solid black;
+    }
+
+    select {
+        width: 15%;
+        height: 45px;
+        border: 2px solid black;
+    }
+
+    .ad img {
+        height: 185px;
+        padding: 8px;
+    }
+
+    /* .ads {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 2em;
+    } */
+
+    .featured {
+        z-index: 1;
+        position: absolute;
+        padding: 5px;
+        font-family: ariaL;
+        font-size: 13px;
+        font-weight: 700;
+        left: 36px;
+        bottom: 260px;
+        background-color: yellow;
+    }
+
+    div svg {
+        position: absolute;
+        top: 10px;
+        right: 1px;
+        z-index: 12;
+    }
+
+    .Rupees {
+        text-align: left;
+        font-weight: 700;
+        font-size: 29px;
+        background-color: white;
+    }
+
+    .discripton {
+        float: left;
+        background-color: white;
+        font-family: ariaL;
+        color: gray;
+        font-size: 17px;
+        overflow: hidden;
+        height: 50px;
+    }
+
+    /* .adRecommends{
+    
+} */
+    .moreDetail {
+        position: absolute;
+        /* float: left; */
+        background-color: white;
+        font-family: ariaL;
+        color: gray;
+        font-size: 10px;
+        bottom: 1px;
+    }
+
+    /* div.style{
+     size: 1px;
+    border: yellow;
+} */
+    .postedDay {
+        position: absolute;
+        font-family: ariaL;
+        color: gray;
+        font-size: 10px;
+        right: 1px;
+        bottom: 1px;
+    }
+
+    #locationBox {
+        width: 282px;
+        display: flex;
+        align-items: center;
+        height: 48px;
+        background: #fff;
+        padding: 0 8px;
+        border: 2px solid #002f34;
+    }
+
+    div#locationBox .location {
+        position: relative;
+    }
+
+    input.input1 {}
+</style>
+
+<body>
+    <header class="header" id="myHeader">
+        <svg width="48px" height="48px" viewBox="0 0 1024 1024" data-aut-id="icon">
+            <path class="rui-77aaa"
+                d="M672.073 786.477h-139.037v-585.943h139.037v585.943zM483.019 493.596c0 133.44-108.16 241.419-241.419 241.419s-241.6-108.16-241.6-241.419c0-133.259 108.16-241.419 241.419-241.419s241.6 107.98 241.6 241.419zM314.73 493.596c0-40.447-32.683-73.13-73.13-73.13s-73.13 32.683-73.13 73.13c0 40.447 32.683 73.13 73.13 73.13s73.13-32.683 73.13-73.13zM1023.639 346.794h-92.27l-54.17 54.17-54.17-54.17h-92.27v93.895l53.448 53.448-53.448 53.448v92.631h93.715l52.906-52.906 52.906 52.906h93.715v-92.631l-53.448-53.448 53.448-53.448v-93.895h-0.361z">
+            </path>
+        </svg>
+        <div id="locationBox">
+            <svg class="location" width="25px" height="25px" viewBox="0 0 1024 1024" data-aut-id="icon" class=""
+                fill-rule="evenodd">
+                <path class="rui-77aaa"
+                    d="M499.2 580.267c-82.475 0-149.333-66.859-149.333-149.333v0c0-82.475 66.859-149.333 149.333-149.333v0c82.475 0 149.333 66.859 149.333 149.333v0c0.041 1.291 0.065 2.808 0.065 4.331 0 80.118-64.949 145.067-145.067 145.067-1.523 0-3.041-0.023-4.552-0.070l0.221 0.005zM499.2 324.267c-57.98 2.259-104.408 48.687-106.66 106.457l-0.006 0.21c0 58.91 47.756 106.667 106.667 106.667v0c58.91 0 106.667-47.756 106.667-106.667v0c0-58.91-47.756-106.667-106.667-106.667v0zM473.6 934.4c-34.133-29.867-328.533-311.467-328.533-499.2 2.377-194.619 159.514-351.756 353.907-354.131l0.226-0.002c0.007 0 0.016 0 0.025 0 196.439 0 355.966 158.038 358.372 353.906l0.002 0.227c0 187.733-294.4 469.333-328.533 499.2zM499.2 162.133c-150.811 0-273.067 122.256-273.067 273.067v0c0 115.2 179.2 315.733 273.067 409.6 98.133-93.867 273.067-294.4 273.067-409.6 0-150.811-122.256-273.067-273.067-273.067v0z">
+                </path>
+            </svg>
+            <input class="input1" type="text" name="" id="">
+            <!-- <select name="" id="">
+                <option value="Countries">Pakistan</option>
+                <option value="Countries">US</option>
+                <option value="Countries">China</option>
+                <option value="Countries">India</option>
+                <option value="Countries">Saudi Arabia</option>
+          </select> -->
+        </div>
+
+        <input type="text">
+    </header>
+    <!-- <span class="adRecommends">Fresh Recommendations</span> -->
+    <section id="adSection">
+        <div class="ad">
+            <div class="box">
+                <span class="featured">
+                    Featured</span>
+                <img src="https://apollo-singapore.akamaized.net:443/v1/files/u06gtxa7slyh2-PK/image;s=272x0"
+                    alt="Golden offers 32 Android samsung led 1 year warranty">
+                <svg width="24px" height="24px" viewBox="0 0 1024 1024" data-aut-id="icon">
+                    <path class="rui-77aaa"
+                        d="M713.387 128c-104.533 0-164.267 37.12-204.373 118.187-38.115-70.843-111.733-118.187-196.408-118.187-0.1 0-0.201 0-0.301 0l0.016-0c-215.893 0-288.853 289.707-170.667 407.467 48.64 48.213 189.867 197.973 370.347 389.547 196.693-207.787 341.333-357.547 372.053-389.547 116.907-116.053 40.107-407.467-170.667-407.467zM837.12 487.253c-31.147 31.573-136.96 142.080-317.867 333.227l-6.4 6.827-5.973-6.827q-248.32-263.68-318.293-333.227c-85.333-85.333-15.36-291.84 123.733-291.84 81.067 0 148.48 53.333 185.173 151.893l11.947 27.307 11.947-27.307c32.427-107.947 90.027-151.893 192-151.893 135.253-0 209.067 207.36 123.733 291.84z">
+                    </path>
+                </svg>
+                <div class="Rupees">
+                    Rs 16,499
+                </div>
+                <div class="discripton">
+                    Golden offers 32 Android samsung led 1 year warranty
+                </div>
+                <div class="moreDetail">
+                    Wahdat Road, Lahore, Punjab
+                </div>
+                <div class="postedDay">
+                    Sep 24
+                </div>
+            </div>
+            <div class="box">
+                <span class="featured">
+                    Featured</span>
+                <img src="https://apollo-singapore.akamaized.net:443/v1/files/uqqsx0wy81po-PK/image;s=272x0"
+                    alt="S8 4gb 64 gb mobile hub">
+                <svg width="24px" height="24px" viewBox="0 0 1024 1024" data-aut-id="icon">
+                    <path class="rui-77aaa"
+                        d="M713.387 128c-104.533 0-164.267 37.12-204.373 118.187-38.115-70.843-111.733-118.187-196.408-118.187-0.1 0-0.201 0-0.301 0l0.016-0c-215.893 0-288.853 289.707-170.667 407.467 48.64 48.213 189.867 197.973 370.347 389.547 196.693-207.787 341.333-357.547 372.053-389.547 116.907-116.053 40.107-407.467-170.667-407.467zM837.12 487.253c-31.147 31.573-136.96 142.080-317.867 333.227l-6.4 6.827-5.973-6.827q-248.32-263.68-318.293-333.227c-85.333-85.333-15.36-291.84 123.733-291.84 81.067 0 148.48 53.333 185.173 151.893l11.947 27.307 11.947-27.307c32.427-107.947 90.027-151.893 192-151.893 135.253-0 209.067 207.36 123.733 291.84z">
+                    </path>
+                </svg>
+                <div class="Rupees">
+                    Rs 23,550
+                </div>
+                <div class="discripton">
+                    S8 4gb 64 gb mobile hub
+                </div>
+                <!-- <div class="moreDetail">
+                        WARIS KHAN, RAWALPINDI
+                    </div> -->
+                <div class="postedDay">
+                    Sep 24
+                </div>
+            </div>
+            <div class="box">
+                <span class="featured">
+                    Featured</span>
+                <img src="https://apollo-singapore.akamaized.net:443/v1/files/auc66rwsm1bk-PK/image;s=272x0"
+                    alt="32 inch led Samsung Led FHD TV WITH 2 Years Warranty">
+                <svg width="24px" height="24px" viewBox="0 0 1024 1024" data-aut-id="icon">
+                    <path class="rui-77aaa"
+                        d="M713.387 128c-104.533 0-164.267 37.12-204.373 118.187-38.115-70.843-111.733-118.187-196.408-118.187-0.1 0-0.201 0-0.301 0l0.016-0c-215.893 0-288.853 289.707-170.667 407.467 48.64 48.213 189.867 197.973 370.347 389.547 196.693-207.787 341.333-357.547 372.053-389.547 116.907-116.053 40.107-407.467-170.667-407.467zM837.12 487.253c-31.147 31.573-136.96 142.080-317.867 333.227l-6.4 6.827-5.973-6.827q-248.32-263.68-318.293-333.227c-85.333-85.333-15.36-291.84 123.733-291.84 81.067 0 148.48 53.333 185.173 151.893l11.947 27.307 11.947-27.307c32.427-107.947 90.027-151.893 192-151.893 135.253-0 209.067 207.36 123.733 291.84z">
+                    </path>
+                </svg>
+                <div class="Rupees">
+                    Rs 13,399
+                </div>
+                <div class="discripton">
+                    32 inch led Samsung Led FHD TV WITH 2 Years Warranty
+
+                </div>
+                <!-- <div class="moreDetail">
+                        WARIS KHAN, RAWALPINDI
+                    </div> -->
+                <div class="postedDay">
+                    Sep 16
+                </div>
+            </div>
+            <div class="box">
+                <span class="featured">
+                    Featured</span>
+                <img src="https://apollo-singapore.akamaized.net:443/v1/files/9k3f2ae2vlhg3-PK/image;s=272x0"
+                    alt="Original Samsung Sony and LG LED TV not fake model and sizes">
+                <svg width="24px" height="24px" viewBox="0 0 1024 1024" data-aut-id="icon">
+                    <path class="rui-77aaa"
+                        d="M713.387 128c-104.533 0-164.267 37.12-204.373 118.187-38.115-70.843-111.733-118.187-196.408-118.187-0.1 0-0.201 0-0.301 0l0.016-0c-215.893 0-288.853 289.707-170.667 407.467 48.64 48.213 189.867 197.973 370.347 389.547 196.693-207.787 341.333-357.547 372.053-389.547 116.907-116.053 40.107-407.467-170.667-407.467zM837.12 487.253c-31.147 31.573-136.96 142.080-317.867 333.227l-6.4 6.827-5.973-6.827q-248.32-263.68-318.293-333.227c-85.333-85.333-15.36-291.84 123.733-291.84 81.067 0 148.48 53.333 185.173 151.893l11.947 27.307 11.947-27.307c32.427-107.947 90.027-151.893 192-151.893 135.253-0 209.067 207.36 123.733 291.84z">
+                    </path>
+                </svg>
+                <div class="Rupees">
+                    Rs 26,000
+                </div>
+                <div class="discripton">
+                    Original Samsung Sony and LG LED TV not fake model and sizes
+                </div>
+                <!-- <div class="moreDetail">
+                        WARIS KHAN, RAWALPINDI
+                    </div> -->
+                <div class="postedDay">
+                    Sep 9
+                </div>
+            </div>
+            <div class="box">
+                <span class="featured">
+                    Featured</span>
+                <img src="https://apollo-singapore.akamaized.net:443/v1/files/wfr1xpf08t6u2-PK/image;s=272x0"
+                    alt="2 bed apartment on installment is available">
+                <svg width="24px" height="24px" viewBox="0 0 1024 1024" data-aut-id="icon">
+                    <path class="rui-77aaa"
+                        d="M713.387 128c-104.533 0-164.267 37.12-204.373 118.187-38.115-70.843-111.733-118.187-196.408-118.187-0.1 0-0.201 0-0.301 0l0.016-0c-215.893 0-288.853 289.707-170.667 407.467 48.64 48.213 189.867 197.973 370.347 389.547 196.693-207.787 341.333-357.547 372.053-389.547 116.907-116.053 40.107-407.467-170.667-407.467zM837.12 487.253c-31.147 31.573-136.96 142.080-317.867 333.227l-6.4 6.827-5.973-6.827q-248.32-263.68-318.293-333.227c-85.333-85.333-15.36-291.84 123.733-291.84 81.067 0 148.48 53.333 185.173 151.893l11.947 27.307 11.947-27.307c32.427-107.947 90.027-151.893 192-151.893 135.253-0 209.067 207.36 123.733 291.84z">
+                    </path>
+                </svg>
+                <div class="Rupees">
+                    Rs 1,810,500
+                </div>
+                <div class="discripton">
+                    2 Bds - 2 Ba - 1020 Square Feet 2 bed apartment on installment is available
+                </div>
+                <!-- <div class="moreDetail">
+                        WARIS KHAN, RAWALPINDI
+                    </div> -->
+                <div class="postedDay">
+                    5 Days ago
+                </div>
+            </div>
+            <div class="box">
+                <!-- <span class="featured">
+                    Featured</span> -->
+                <img src="https://apollo-singapore.akamaized.net:443/v1/files/0mfhtt15c4vt1-PK/image;s=272x0"
+                    alt="Samsung J5 pro">
+                <svg width="24px" height="24px" viewBox="0 0 1024 1024" data-aut-id="icon">
+                    <path class="rui-77aaa"
+                        d="M713.387 128c-104.533 0-164.267 37.12-204.373 118.187-38.115-70.843-111.733-118.187-196.408-118.187-0.1 0-0.201 0-0.301 0l0.016-0c-215.893 0-288.853 289.707-170.667 407.467 48.64 48.213 189.867 197.973 370.347 389.547 196.693-207.787 341.333-357.547 372.053-389.547 116.907-116.053 40.107-407.467-170.667-407.467zM837.12 487.253c-31.147 31.573-136.96 142.080-317.867 333.227l-6.4 6.827-5.973-6.827q-248.32-263.68-318.293-333.227c-85.333-85.333-15.36-291.84 123.733-291.84 81.067 0 148.48 53.333 185.173 151.893l11.947 27.307 11.947-27.307c32.427-107.947 90.027-151.893 192-151.893 135.253-0 209.067 207.36 123.733 291.84z">
+                    </path>
+                </svg>
+                <div class="Rupees">
+                    Rs 9,500
+                </div>
+                <div class="discripton">
+                    Samsung J5 pro
+                </div>
+                <div class="moreDetail">
+                    Green Town, Lahore, Punjab
+                </div>
+                <div class="postedDay">
+                    Today
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://apollo-singapore.akamaized.net:443/v1/files/73osqmst4ig71-PK/image;s=272x0"
+                    alt="Realme  3  4/64">
+                <svg width="24px" height="24px" viewBox="0 0 1024 1024" data-aut-id="icon">
+                    <path class="rui-77aaa"
+                        d="M713.387 128c-104.533 0-164.267 37.12-204.373 118.187-38.115-70.843-111.733-118.187-196.408-118.187-0.1 0-0.201 0-0.301 0l0.016-0c-215.893 0-288.853 289.707-170.667 407.467 48.64 48.213 189.867 197.973 370.347 389.547 196.693-207.787 341.333-357.547 372.053-389.547 116.907-116.053 40.107-407.467-170.667-407.467zM837.12 487.253c-31.147 31.573-136.96 142.080-317.867 333.227l-6.4 6.827-5.973-6.827q-248.32-263.68-318.293-333.227c-85.333-85.333-15.36-291.84 123.733-291.84 81.067 0 148.48 53.333 185.173 151.893l11.947 27.307 11.947-27.307c32.427-107.947 90.027-151.893 192-151.893 135.253-0 209.067 207.36 123.733 291.84z">
+                    </path>
+                </svg>
+                <div class="Rupees">
+                    Rs 21,000
+                </div>
+                <div class="discripton">
+                    Realme 3 4/64
+                </div>
+                <div class="moreDetail">
+                    Township, Lahore, Punjab
+                </div>
+                <div class="postedDay">
+                    5 days ago
+                </div>
+            </div>
+            <div class="box">
+                <span class="featured">
+                    Featured</span>
+                <img src="https://apollo-singapore.akamaized.net:443/v1/files/o93h0qjuck781-PK/image;s=272x0"
+                    alt="01 KANAL HOUSE FOR RENT IN DHA LAHORE SPANISH VILLA">
+                <svg width="24px" height="24px" viewBox="0 0 1024 1024" data-aut-id="icon">
+                    <path class="rui-77aaa"
+                        d="M713.387 128c-104.533 0-164.267 37.12-204.373 118.187-38.115-70.843-111.733-118.187-196.408-118.187-0.1 0-0.201 0-0.301 0l0.016-0c-215.893 0-288.853 289.707-170.667 407.467 48.64 48.213 189.867 197.973 370.347 389.547 196.693-207.787 341.333-357.547 372.053-389.547 116.907-116.053 40.107-407.467-170.667-407.467zM837.12 487.253c-31.147 31.573-136.96 142.080-317.867 333.227l-6.4 6.827-5.973-6.827q-248.32-263.68-318.293-333.227c-85.333-85.333-15.36-291.84 123.733-291.84 81.067 0 148.48 53.333 185.173 151.893l11.947 27.307 11.947-27.307c32.427-107.947 90.027-151.893 192-151.893 135.253-0 209.067 207.36 123.733 291.84z">
+                    </path>
+                </svg>
+                <div class="Rupees">
+                    Rs 125,000
+                </div>
+                <div class="discripton">
+                    5 Bds - 6 Ba - 01 Kanal 01 KANAL HOUSE FOR RENT IN DHA LAHORE SPANISH VILLA
+                </div>
+                <!-- <div class="moreDetail">
+                    WARIS KHAN, RAWALPINDI
+                </div> -->
+                <div class="postedDay">
+                    Sep 20
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://apollo-singapore.akamaized.net:443/v1/files/baoas0wgtfdq3-PK/image;s=272x0"
+                    alt="Giger USB charging Lighter">
+                <svg width="24px" height="24px" viewBox="0 0 1024 1024" data-aut-id="icon">
+                    <path class="rui-77aaa"
+                        d="M713.387 128c-104.533 0-164.267 37.12-204.373 118.187-38.115-70.843-111.733-118.187-196.408-118.187-0.1 0-0.201 0-0.301 0l0.016-0c-215.893 0-288.853 289.707-170.667 407.467 48.64 48.213 189.867 197.973 370.347 389.547 196.693-207.787 341.333-357.547 372.053-389.547 116.907-116.053 40.107-407.467-170.667-407.467zM837.12 487.253c-31.147 31.573-136.96 142.080-317.867 333.227l-6.4 6.827-5.973-6.827q-248.32-263.68-318.293-333.227c-85.333-85.333-15.36-291.84 123.733-291.84 81.067 0 148.48 53.333 185.173 151.893l11.947 27.307 11.947-27.307c32.427-107.947 90.027-151.893 192-151.893 135.253-0 209.067 207.36 123.733 291.84z">
+                    </path>
+                </svg>
+                <div class="Rupees">
+                    Rs 500
+                </div>
+                <div class="discripton">
+                    Giger USB charging Lighter
+                </div>
+                <div class="moreDetail">
+                    Girja Road, Rawalpindi, Punjab
+                </div>
+                <div class="postedDay">
+                    Today
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

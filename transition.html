@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    #news {
+        top: 250px;
+        background-color: #900e22;
+        position: relative;
+        color: white;
+        border-radius: 5px;
+        height: 64px;
+        font-size: 20px;
+    }
+
+    p {
+        position: absolute;
+        white-space: nowrap;
+        /* float: right; */
+        animation: MyAnimation 30s linear 0s;
+        animation-iteration-count: infinite;
+        /* transition: margin-left 30s linear 0s;
+        margin-left: 0; */
+    }
+
+    /* p:hover {
+        margin-left: -140%;
+    } */
+    @keyframes MyAnimation {
+        from {
+            margin-left: 100%;
+        }
+
+        to {
+            margin-left: -140%;
+        }
+    }
+
+    img {
+        vertical-align: middle;
+    }
+</style>
+
+<body>
+    <div id="news">
+        <div class="ASF">
+            <p> <img src="http://itspak.org/assets/images/new.gif" width="30" height="30"> Airports Security Force(ASF)
+                written test result has been issued. Please <a href="http://itspak.org/home/search/28" target="_blank"
+                    style="color : #0cf60c">Click Here</a> Here
+                to check result. For further Queries/Complaints Please Email at itspak.org@gmail.com or call at
+                051-4441235,051-4441318,051-2222068
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

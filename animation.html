@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+@keyframes MyFan {
+    from{
+        transform: rotate(0deg)
+    }
+    to{
+        transform: rotate(360deg)
+    }
+}
+#MyFan{
+    animation: MyFan 0.5s linear 0s;
+    animation-iteration-count: infinite;
+}
+.child{
+    position: relative;
+    height: 500px;
+    width: 500px;
+    border: 2px solid palevioletred;
+}
+.child1{
+    height: 50px;
+    width: 100px;
+    background-color: magenta;
+    animation: MyAnimation 10s linear 0s;
+    animation-iteration-count: infinite;
+}
+@keyframes MyAnimation {
+    0%{
+        background-color: blueviolet;
+        height: 100px;
+    }
+    30%{
+        background-color:crimson;
+        opacity: 0;
+    }
+    50%{
+        background-color: chocolate;
+        width: 200px;
+    }
+    70%{
+        background-color: black;
+    }
+    100%{
+        background-color: hotpink;
+        width: 100%;
+        height: 70px;
+    }
+}
+#Flower{
+animation: Flower 8s linear 1s;
+animation-iteration-count: infinite;
+}
+@keyframes Flower {
+
+ 0%{
+        transform: rotate(0deg);
+        height: 50px;
+        width: 50px;
+    }
+25%{
+   height: 200px;
+   width: 200px;
+}
+50%{
+    height: 300px;
+    width: 300px;
+}
+100%{
+    height: 400px;
+    width: 400px;
+}
+}
+#Flower:hover{
+    transform: rotate(360deg);
+}
+img#Flower{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 55px;
+    margin: auto;
+}
+</style>
+<body>
+    <img id="MyFan" src="hUycKD.png" alt=""> 
+<div class="child">
+<div class="child1">
+
+</div>
+</div>
+<img  id="Flower" src="download.jpg" alt="">
+</body>
+</html>

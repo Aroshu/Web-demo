@@ -1,0 +1,19 @@
+git init
+
+git add .
+
+git remote add cat <your-git-url>
+
+git commit -m "<your-message-here>"
+
+git push cat master
+
+git pull cat master
+
+git branch
+
+git chechout -b (new branch name)
+
+git branch -d(delete file)
+
+git branch -D(permanently delete)

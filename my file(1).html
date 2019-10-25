@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        #mycar {
+            left: -8px;
+            z-index: 1;
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            top: 75px;
+            /* animation: myCar 4s linear 0s;
+            animation-iteration-count: infinite; */
+        }
+
+        .moving {
+            animation: myCar 4s linear 0s;
+            animation-iteration-count: 1;
+        }
+
+        .car {
+            height: 100px;
+            width: 200px;
+            position: absolute;
+            /* animation: myCar 5s linear 0s;
+            animation-iteration-count: infinite; */
+        }
+
+        .wheel1 {
+            position: absolute;
+            height: 31px;
+            top: 54px;
+            /* width: 44px; */
+            left: 31px;
+            animation: myWheel1 1s linear 0s;
+            animation-iteration-count: 10;
+        }
+
+        .wheel2 {
+            position: absolute;
+            height: 31px;
+            top: 54px;
+            /* width: 44px; */
+            left: 143px;
+            animation: myWheel2 1s linear 0s;
+            animation-iteration-count: 10;
+        }
+
+        /* .moving {
+            animation: myWheel1 1s linear 0s;
+            animation-iteration-count: infinite;
+        }
+
+        .moving {
+            animation: myWheel2 1s linear 0s;
+            animation-iteration-count: infinite;
+        } */
+
+        #myroad {
+            position: absolute;
+            width: 100%;
+        }
+
+        .road {
+            width: 100%;
+        }
+
+        @keyframes myCar {
+            from {
+                margin-left: 0vw;
+            }
+
+            to {
+                margin-left: 100vw;
+            }
+
+            from {
+                margin-right: 0vw !important;
+            }
+
+            to {
+                margin-right: 100vw !important;
+            }
+        }
+
+        @keyframes myWheel1 {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes myWheel2 {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        button {
+            position: absolute;
+            top: 375px;
+            left: 120px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mycar">
+        <img class="car" src="my-car.png" alt="">
+        <img class="wheel1" src="wheel.png" alt="">
+        <img class="wheel2" src="wheel.png" alt="">
+    </div>
+    <div id="myroad">
+        <img class="road" src="myroad.jpg" alt="">
+    </div>
+    <button type="button" Onclick="mycar.classList.add('moving')">Click Me!</button>
+</body>
+
+</html>
